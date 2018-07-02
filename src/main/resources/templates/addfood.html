@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>AddFood</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="nasty-tasty-styles.css">
+</head>
+<body id="add-form" class="app-section">
+    <div class="content-wrapper-2 container">
+        <h1 class="text-center">Add Food</h1>
+        <div class="col-md-6 offset-3">
+            <form th:action="@{/savefood}" th:object="${theDish}" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label th:for="description">Name/Description</label><br>
+                    <input type="text" class="form-control" th:field="*{description}"><br>
+                </div>
+                <div class="form-group">
+                    <label th:for="imageurl" th:classappend="${#fields.hasErrors('imageurl')}?'redtext':''">Add an image of a dish</label><br>
+                    <input type="text" class="form-control" th:field="*{imageurl}">
+                </div>
+                <h4>OR</h4>
+                <div class="form-group">
+                    <label class="btn btn-default btn-file">
+                        Browse: <br><input type="file" name="file">
+                    </label>
+                </div><br>
+                <button class="special-button button-link btn btn-success btn-file">Save</button>
+            </form>
+        </div>
+        <script src="js/bootstrap.js"></script>
+    </div>
+</body>
+</html>

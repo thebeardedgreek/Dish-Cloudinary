@@ -1,0 +1,45 @@
+#homepage{
+    background-image: url("img/food-background-2.jpg");
+    background-size: 100%;
+}
+
+#add-form{
+    background-image: url("img/food-background-3.jpg");
+    background-size: 100%;
+}
+
+.special-button{
+    margin-top: 30px;
+    background-color: rgba(0, 0, 0, 0.55);
+    opacity: 2;
+    color: silver;
+    padding: 0 5px 5px 5px;
+    border-color: gold;
+    border-radius: 30px;
+}
+
+.button-link{
+    color: silver;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.content-wrapper{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 16px;
+    border: 2px solid white;
+}
+.content-wrapper-2{
+    background-color: rgba(255,215,0,0.5);
+    padding: 16px;
+    border: 2px solid white;
+}
+
+.app-section{
+    height: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
+    display: flex;
+    align-items: left;
+    font-size: 20px;
+}
